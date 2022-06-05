@@ -12,7 +12,7 @@
 		#include  "includes/bd.php"  inclui o arq
 		#require_once requer o arqui e só importa uma vez 
 		require_once "includes/bd.php" ;
-		require_once "funcaoes/thumb.php";
+		require_once "includes/thumb.php";
 	?>
 	<div id="corpo">
 		<h2>Escolha o seu Jogo</h2>
@@ -27,9 +27,12 @@
 								}else{
 								while ($reg=$busca->fetch_object()) {
 									$t= thumb($reg->capa);
-									echo"<tr><td><img src='$t' class='capa'/>";
-									echo "<td> <a href=''>$reg->nome </a>";	
-									echo"<td>ADM";		
+	
+									echo"<div class='row'>" ;
+									echo"<div class='col-md-4'><img src='$t' class='capa'/> </div>";
+									echo"<div class='col-md-7'> <a href='detalhes.php?id=$reg->id'> $reg->nome </a> </div>";
+									echo"<div class='col-md-1 '> ADM </div>";
+									echo"</div>";
 
 								}}}
 				 ?>

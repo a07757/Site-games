@@ -22,6 +22,11 @@ table.listagem td {
 	border: 2px solid #ddd;
 }
 .capa{
+	height: 200px;
+	width: 400px;
+}
+
+.capa_detalhes{
 	height: 100px;
 	width: 200px;
 }
