@@ -1,0 +1,27 @@
+body{
+	background: #ddd;
+
+}
+div#corpo{
+	width: 950px;
+	margin: auto;
+	background: ghostwhite;
+	padding: 20px;
+}
+table.listagem{
+	
+	width: 100%;
+	text-align: left;
+}
+table.listagem tr {
+	height: 50px;
+
+}
+table.listagem td {
+	
+	border: 2px solid #ddd;
+}
+.capa{
+	height: 100px;
+	width: 200px;
+}
