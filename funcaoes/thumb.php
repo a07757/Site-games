@@ -5,7 +5,7 @@
 		if (is_null($arq) || !file_exists($caminho)){
 			return "fotos/indisponivel.png";
 		}else{
-			$caminho;
+			return $caminho;
 		}
 	}
 
