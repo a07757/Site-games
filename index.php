@@ -25,8 +25,9 @@
 								echo"<tr><td> Nenhum registro encontrado !!";	
 								}else{
 								while ($reg=$busca->fetch_object()) {
-									echo"<tr><td><img src='fotos/$reg->capa' class='capa'/><td>$reg->nome";	
-									echo"<td>ADM</td>";		
+									echo"<tr><td><img src='fotos/$reg->capa' class='capa'/>";
+									echo "<td> <a href=''>$reg->nome </a>";	
+									echo"<td>ADM";		
 								}}}
 				 ?>
 
